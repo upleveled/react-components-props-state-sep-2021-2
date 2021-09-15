@@ -1,5 +1,9 @@
 import './App.css';
+import ClassTicTacToe from './classComponents/ClassTicTacToe';
+import HooksTicTacToe from './classComponents/HooksTicTacToe';
+import ConditionalRendering from './ConditionalRendering';
 import Counter from './Counter';
+import FormsControlledComponents from './FormsControlledComponents';
 import Mapping from './Mapping';
 import PropsDestructuring from './PropsDestructuring copy';
 import PropsInJsx from './PropsInJsx';
@@ -80,6 +84,25 @@ export default function App() {
           { id: 3, label: 'coach' },
         ]}
       />
+
+      <ConditionalRendering />
+
+      <FormsControlledComponents />
+
+      <h1>Class tic tac toe</h1>
+      <ClassTicTacToe />
+      <h1>Hooks tic tac toe</h1>
+      <HooksTicTacToe />
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   );
 }
