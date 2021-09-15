@@ -1,5 +1,9 @@
 import './App.css';
 import Counter from './Counter';
+import Mapping from './Mapping';
+import PropsDestructuring from './PropsDestructuring copy';
+import PropsInJsx from './PropsInJsx';
+import StateUpdatesArentSynchronous from './StateUpdatesArentSynchronous';
 
 // 2. You need to declare the props argument
 // which will become the object with all of the
@@ -50,8 +54,32 @@ export default function App() {
         mode={settingsMode}
         name={`Karl ${lastName}`}
       />
-
       <Counter />
+
+      {/* State updates are not synchronous */}
+      <StateUpdatesArentSynchronous />
+
+      <PropsInJsx
+        baggageTypes={['cabin', 'checked']}
+        seatClasses={['business', 'first', 'coach']}
+      />
+
+      <PropsDestructuring
+        baggageTypes={['cabin', 'checked']}
+        seatClasses={['business', 'first', 'coach']}
+      />
+
+      <Mapping
+        baggageTypes={[
+          { id: 1, label: 'cabin' },
+          { id: 2, label: 'checked' },
+        ]}
+        seatClasses={[
+          { id: 1, label: 'business' },
+          { id: 2, label: 'first' },
+          { id: 3, label: 'coach' },
+        ]}
+      />
     </div>
   );
 }
