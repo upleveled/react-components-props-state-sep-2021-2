@@ -1,13 +1,19 @@
 import './App.css';
+import Antipatterns from './Antipatterns';
+import ChildrenProp from './ChildrenProp';
 import ClassTicTacToe from './classComponents/ClassTicTacToe';
 import HooksTicTacToe from './classComponents/HooksTicTacToe';
 import ConditionalRendering from './ConditionalRendering';
+import ControlledComponents from './ControlledComponents';
 import Counter from './Counter';
 import FormsControlledComponents from './FormsControlledComponents';
 import Mapping from './Mapping';
 import PropsDestructuring from './PropsDestructuring copy';
 import PropsInJsx from './PropsInJsx';
+import PropTypesExample from './PropTypesExample';
 import StateUpdatesArentSynchronous from './StateUpdatesArentSynchronous';
+import UseStateNotSync from './UseStateNotSync';
+import UseStateWithArray from './UseStateWithArrays';
 
 // 2. You need to declare the props argument
 // which will become the object with all of the
@@ -94,7 +100,30 @@ export default function App() {
       <h1>Hooks tic tac toe</h1>
       <HooksTicTacToe />
 
-      <br />
+      <hr />
+      <h1>React Components Review</h1>
+      <h2>Children Prop</h2>
+      <ChildrenProp>I am outside of the component</ChildrenProp>
+      <ChildrenProp>
+        <div>Hi</div>
+      </ChildrenProp>
+      <h2>Prop Types</h2>
+      <PropTypesExample
+        user={{
+          name: 'jose',
+          lastName: 'barbosa',
+          email: 'josebarbosa@gmail.com',
+          age: 32,
+        }}
+      />
+      <h2>Antipatterns</h2>
+      <Antipatterns />
+      <h2>Controlled Components</h2>
+      <ControlledComponents />
+      <h2>Use State delay</h2>
+      <UseStateNotSync />
+      <h2>Arrays on useState</h2>
+      <UseStateWithArray />
       <br />
       <br />
       <br />
