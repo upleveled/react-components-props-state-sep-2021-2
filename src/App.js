@@ -12,6 +12,7 @@ import PropsDestructuring from './PropsDestructuring copy';
 import PropsInJsx from './PropsInJsx';
 import PropTypesExample from './PropTypesExample';
 import StateUpdatesArentSynchronous from './StateUpdatesArentSynchronous';
+import UseEffectFetchingData from './UseEffectFetchingData';
 import UseStateNotSync from './UseStateNotSync';
 import UseStateWithArray from './UseStateWithArrays';
 
@@ -125,7 +126,11 @@ export default function App() {
       <h2>Arrays on useState</h2>
       <UseStateWithArray />
       <br />
+      <h1>Example whitout form </h1>
+      <input />
+      <button onClick={() => console.log('hey')}>click</button>
       <br />
+      <UseEffectFetchingData />
       <br />
       <br />
       <br />
