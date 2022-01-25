@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const tropicalFruits = ['papaya', 'apple', 'pineapple'];
+// const tropicalFruits = ['papaya', 'apple', 'pineapple'];
 
 const tropicalFruitsObj = [
   {
